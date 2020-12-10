@@ -7,4 +7,10 @@ public class SwimmingCoach implements Coach {
 		return "Swim ALOT";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
