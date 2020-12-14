@@ -9,7 +9,7 @@
 
 	<context:property-placeholder location="classpath:sport.properties"/>
     <!-- Define your beans here -->
-    <bean id="myFortune" class="springdemo.HappyFortuneService"></bean>
+    <bean id="myFortune" class="springdemo.RandomFortuneService"></bean>
     <!-- constructor injection examples-->
     <bean id="myCoach" class="springdemo.TrackCoach">
     	<constructor-arg ref="myFortune"></constructor-arg>
