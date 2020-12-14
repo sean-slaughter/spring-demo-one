@@ -9,11 +9,15 @@
 
     <!-- Define your beans here -->
     <bean id="myFortune" class="springdemo.HappyFortuneService"></bean>
+    <!-- constructor injection examples-->
     <bean id="myCoach" class="springdemo.TrackCoach">
     	<constructor-arg ref="myFortune"></constructor-arg>
     </bean>
+    <!--  setter injection examples -->
     <bean id="myCricketCoach" class="springdemo.CricketCoach">
     	<property name="fortuneService" ref="myFortune"/>
+    	<property name="team" value="The BEST TEAM"/>
+    	<property name="emailAddress" value="sthompson2822@gmail.com"/>
     </bean>
 </beans>
 
