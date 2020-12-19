@@ -10,7 +10,7 @@
     <!-- Define your beans here -->
     <bean id="myFortune" class="springdemo.RandomFortuneService"></bean>
     <!-- constructor injection examples-->
-    <bean id="myCoach" class="springdemo.TrackCoach">
+    <bean id="myCoach" class="springdemo.TrackCoach" scope="prototype">
     	<constructor-arg ref="myFortune"></constructor-arg>
     </bean>
    
